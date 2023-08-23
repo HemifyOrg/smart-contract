@@ -22,7 +22,7 @@ contract HemifyWagerTest is Test, Addresses {
     uint256 internal limit = 100 ether;
 
     function setUp() public {
-        currentFork = vm.createSelectFork("https://rpc.ankr.com/eth");
+        currentFork = vm.createSelectFork(RPC_URL);
         address[] memory _addresses = _setupAddresses(7);
 
         vm.expectRevert();
