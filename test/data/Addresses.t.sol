@@ -32,6 +32,8 @@ contract Addresses is Test {
 
     address[] internal addresses_;
 
+    string internal constant RPC_URL = "https://eth.drpc.org";
+
     function _setupAddresses(uint8 limit) internal returns (address[] memory) {
         address[] memory _addresses = new address[](limit);
 

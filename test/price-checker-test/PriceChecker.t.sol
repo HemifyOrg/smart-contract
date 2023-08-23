@@ -23,7 +23,7 @@ contract PriceCheckerTest is Test, Addresses {
     uint256 internal currentFork = 10;
 
     function setUp() public {
-        currentFork = vm.createSelectFork("https://eth.meowrpc.com/");
+        currentFork = vm.createSelectFork(RPC_URL);
         implementer = new PriceCheckerImplementer();
     }
 

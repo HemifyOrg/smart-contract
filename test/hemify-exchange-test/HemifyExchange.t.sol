@@ -18,7 +18,7 @@ contract HemifyExchangeTest is Test, Addresses {
     uint256 internal limit = 100 ether;
 
     function setUp() public {
-        currentFork = vm.createSelectFork("https://eth.meowrpc.com/");
+        currentFork = vm.createSelectFork(RPC_URL);
         exchange = new HemifyExchange();
         deal(USDC, cOwner, limit);
         deal(USDT, cOwner, limit);
